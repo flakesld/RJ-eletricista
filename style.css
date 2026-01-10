@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e5e7eb;
+}
+
+.header {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("banner.avif");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 300px;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(8, 9, 1);
+  text-align: center;
+}
+
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.header p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #009325;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #00980f;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #e3d40a;
+}
+
+.services li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.cta {
+    text-align: center;
+    padding: 40px;
+    background-color: #020617;
+    border-radius: 12px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5a5e14;
+    margin-top: 50px;
+}
+.services-section {
+    margin-top: 50px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #020617;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    margin: 15px;
+    color: #e3d40a;
+}
+
+.service-card p {
+    margin: 0 15px 20px;
+    font-size: 0.95rem;
+    color: #cbd5f5;
+}
