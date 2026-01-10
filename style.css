@@ -12,22 +12,23 @@ body {
 
 .header {
   background-image:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("img/banner.avif");
 
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
 
-  height: 300px;
+  min-height: 350px;
 
   display: flex;
   flex-direction: column; 
   align-items: center;
   justify-content: center;
 
-  color: rgb(8, 9, 1);
   text-align: center;
+  padding: 40px 20px;
+  color: #ffffff;
 }
 
 
@@ -126,3 +127,19 @@ h2 {
     font-size: 0.95rem;
     color: #cbd5f5;
 }
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    text-align: left;
+}
+
+.logo {
+    width: 150px;
+}
+
